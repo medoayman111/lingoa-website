@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Lingoa</title>
+  <meta name="description" content="Official Privacy Policy for Lingoa — Learn English Vocabulary.">
+  <link rel="icon" type="image/png" href="assets/app_icon_512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-dark: #3730A3;
+      --accent: #2563EB;
+      --bg: #0B0F19;
+      --card-bg: rgba(17, 24, 39, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text: #F3F4F6;
+      --text-muted: #9CA3AF;
+      --text-dim: #6B7280;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(79, 70, 229, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 85% 75%, rgba(37, 99, 235, 0.12) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+    header {
+      border-bottom: 1px solid var(--card-border);
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(16px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+    .brand img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+    }
+    .back-btn {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+      transition: all 0.2s ease;
+    }
+    .back-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+    .policy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 48px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .meta {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 14px;
+      color: #EEF2FF;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #C7D2FE;
+    }
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    ul {
+      margin-left: 24px;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: #FFFFFF;
+    }
+    a {
+      color: #818CF8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .highlight-box {
+      background: rgba(79, 70, 229, 0.08);
+      border: 1px solid rgba(79, 70, 229, 0.25);
+      border-radius: 14px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--card-border);
+    }
+    th {
+      color: #EEF2FF;
+      background: rgba(255, 255, 255, 0.03);
+      font-weight: 700;
+    }
+    td {
+      color: var(--text-muted);
+    }
+    .contact-card {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.15) 0%, rgba(37, 99, 235, 0.15) 100%);
+      border: 1px solid rgba(129, 140, 248, 0.3);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--card-border);
+    }
+    @media (max-width: 640px) {
+      .policy-card { padding: 24px 18px; }
+      h1 { font-size: 1.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/app_icon_512.png" alt="Lingoa Logo">
+        <span>Lingoa</span>
+      </a>
+      <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="policy-card">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <strong>Effective Date:</strong> October 10, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> October 10, 2026
+      </div>
+
+      <p>
+        Welcome to <strong>Lingoa</strong> ("App", "we", "us", or "our"), developed and operated by <strong>Mohammed Ayman Hagras</strong> ("Developer"). We respect your privacy and are committed to protecting any data that may be collected or processed when you use the Lingoa mobile application.
+      </p>
+      <p>
+        This Privacy Policy explains what information is collected, how it is used, how it is protected, and your rights regarding your data in compliance with Google Play Developer Policies, General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and applicable privacy laws.
+      </p>
+
+      <h2>1. Developer Information & Contact</h2>
+      <div class="highlight-box">
+        <p style="margin-bottom: 6px;"><strong>Application Name:</strong> Lingoa — Learn English Vocabulary</p>
+        <p style="margin-bottom: 6px;"><strong>Developer:</strong> Mohammed Ayman Hagras</p>
+        <p style="margin-bottom: 0;"><strong>Official Contact Email:</strong> <a href="mailto:mohammedaymanhagras@gmail.com">mohammedaymanhagras@gmail.com</a></p>
+      </div>
+
+      <h2>2. Information We Collect and How It Is Used</h2>
+      <p>
+        Lingoa is built on a <strong>privacy-first, offline-capable architecture</strong>. You do not need to register, create an account, or provide personal details to learn vocabulary with Lingoa.
+      </p>
+
+      <h3>A. On-Device Learning Data (Stored Locally Only)</h3>
+      <ul>
+        <li><strong>Data Collected:</strong> Your study progress, mastered words, daily streak counts, quiz scores, spaced repetition (SRS) schedules, and personal bookmarks.</li>
+        <li><strong>Storage:</strong> Stored 100% locally on your device in a secure SQLite database. This data is <strong>never</strong> transmitted to our servers and remains completely in your control.</li>
+      </ul>
+
+      <h3>B. Audio and Microphone Permission (RECORD_AUDIO)</h3>
+      <ul>
+        <li><strong>Purpose:</strong> Used strictly for interactive pronunciation practice, speech recognition, and vocabulary speaking exercises.</li>
+        <li><strong>Privacy Protection:</strong> Audio is analyzed in real-time on your device (or via native system speech recognition). <strong>We never record, save, store, or transmit your voice or audio recordings to any external server.</strong></li>
+      </ul>
+
+      <h3>C. Local Notifications and Alarms</h3>
+      <ul>
+        <li><strong>Purpose:</strong> Used locally on your device to schedule daily study reminders and spaced repetition reviews.</li>
+        <li><strong>Privacy Protection:</strong> Operates entirely offline on your phone without external network transmission.</li>
+      </ul>
+
+      <h3>D. Diagnostic & Crash Telemetry (Firebase Crashlytics)</h3>
+      <ul>
+        <li><strong>Data Collected:</strong> Anonymous device state at the time of an unexpected crash, operating system version, device model, and error stack traces.</li>
+        <li><strong>Purpose:</strong> To ensure high performance, resolve technical bugs, and maintain app stability.</li>
+      </ul>
+
+      <h2>3. Advertising & Google AdMob</h2>
+      <p>
+        To keep Lingoa’s comprehensive learning library accessible to all learners worldwide for free, we display in-app advertisements via <strong>Google AdMob</strong> (provided by Google LLC).
+      </p>
+      <ul>
+        <li><strong>Google Advertising ID (AAID):</strong> Used by AdMob to deliver relevant ads, prevent ad fraud, and cap ad repetition.</li>
+        <li><strong>Device Telemetry:</strong> Device model, screen dimensions, operating system, and coarse location (country/city level derived from IP).</li>
+      </ul>
+      <p>
+        <strong>How to Opt Out of Personalized Ads:</strong> You can reset or delete your advertising identifier at any time via your Android device settings: <em>Settings ➔ Google (or Privacy) ➔ Ads ➔ Reset or Delete Advertising ID</em>.
+      </p>
+      <p>
+        Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> &nbsp;|&nbsp; <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps</a>.
+      </p>
+
+      <h2>4. Subscriptions & In-App Purchases (RevenueCat & Google Play)</h2>
+      <p>
+        Lingoa offers an optional <strong>Pro Subscription</strong> which removes all ads and unlocks unlimited access to all features.
+      </p>
+      <ul>
+        <li><strong>Secure Google Play Billing:</strong> All financial transactions are processed securely through Google Play. We do not receive, store, or have access to your payment card details.</li>
+        <li><strong>Receipt Verification via RevenueCat:</strong> We partner with <strong>RevenueCat, Inc.</strong> to manage in-app subscriptions. RevenueCat processes anonymous tokens and purchase receipts to unlock Pro privileges across your sessions. Review the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+      </ul>
+
+      <h2>5. Summary of Third-Party Partners</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Partner</th>
+            <th>Role</th>
+            <th>Privacy Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google AdMob</strong></td>
+            <td>Banner, Interstitial, Native & Rewarded Ads</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></td>
+          </tr>
+          <tr>
+            <td><strong>RevenueCat, Inc.</strong></td>
+            <td>Subscription & Receipt Verification</td>
+            <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Firebase Crashlytics</strong></td>
+            <td>Crash Analytics & Performance</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>6. Children’s Privacy (COPPA)</h2>
+      <p>
+        Lingoa is intended for a general audience and is designed for users aged <strong>13 and older</strong>. We do not knowingly target, market to, or collect personal information from children under the age of 13. If you believe that a child has provided us with personal information, please notify us immediately at <a href="mailto:mohammedaymanhagras@gmail.com">mohammedaymanhagras@gmail.com</a>, and we will promptly remove the data.
+      </p>
+
+      <h2>7. Data Retention & Deletion Rights</h2>
+      <p>
+        You have the right to request access to or deletion of any data associated with your device. You can clear all local app data instantly through: <em>Settings ➔ Apps ➔ Lingoa ➔ Storage ➔ Clear Data</em>. For any telemetry inquiries, email us at <a href="mailto:mohammedaymanhagras@gmail.com">mohammedaymanhagras@gmail.com</a>.
+      </p>
+
+      <h2>8. User Rights under GDPR & CCPA</h2>
+      <p>
+        Depending on your jurisdiction, you have the right to know, access, correct, or delete your personal data. We do <strong>not</strong> sell or share your personal data with third-party data brokers.
+      </p>
+
+      <h2>9. Policy Updates</h2>
+      <p>
+        We may occasionally update this Privacy Policy to reflect app enhancements or regulatory requirements. Any revisions will be published on this page with an updated effective date.
+      </p>
+
+      <div class="contact-card">
+        <h3 style="margin-top: 0; color: #EEF2FF;">Need Help or Have Questions?</h3>
+        <p style="margin-bottom: 8px;">Feel free to reach out directly to the developer:</p>
+        <p style="margin-bottom: 0;">
+          <strong>Mohammed Ayman Hagras</strong><br>
+          📧 Email: <a href="mailto:mohammedaymanhagras@gmail.com">mohammedaymanhagras@gmail.com</a><br>
+          📱 App: <strong>Lingoa — English Vocabulary</strong>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Lingoa. Developed by Mohammed Ayman Hagras. All rights reserved.</p>
+    <p style="margin-top: 6px;"><a href="index.html">Home</a> &nbsp;•&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;•&nbsp; <a href="app-ads.txt">app-ads.txt</a></p>
+  </footer>
+
+</body>
+</html>
