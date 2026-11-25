@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lingoa — جاري التوجيه...</title>
+  <meta name="theme-color" content="#070B14">
+  <link rel="icon" type="image/webp" href="/assets/webp/app_logo_3d_512.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&display=swap" rel="stylesheet">
+  <script>
+    // Handle /join/SQD-... deep links cleanly on GitHub Pages where rewrites aren't active
+    (function () {
+      var parts = window.location.pathname.split('/').filter(Boolean);
+      if (parts.length >= 2 && parts[0].toLowerCase() === 'join') {
+        window.location.replace('/join.html?code=' + encodeURIComponent(parts[1]));
+      }
+    })();
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: 'Cairo', -apple-system, sans-serif;
+      background: #070B14;
+      color: #F8FAFC;
+      text-align: center;
+    }
+    .box {
+      max-width: 420px;
+      width: 100%;
+      background: rgba(14, 21, 38, 0.9);
+      border: 1px solid rgba(45, 212, 191, 0.34);
+      border-radius: 26px;
+      padding: 36px 24px;
+    }
+    .logo {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      margin: 0 auto 14px;
+      background: #fff;
+      padding: 4px;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 10px; }
+    p { color: #94A3B8; font-size: 0.95rem; margin-bottom: 22px; }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .btn-gold { background: linear-gradient(135deg, #FCD34D, #F59E0B); color: #070B14; }
+    .btn-ghost { background: rgba(255,255,255,0.06); border: 1px solid rgba(148,163,184,0.2); color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img class="logo" src="/assets/webp/app_logo_3d_512.webp" alt="Lingoa">
+    <h1>الصفحة غير موجودة (404)</h1>
+    <p>يبدو أن الرابط غير مكتمل — يمكنك العودة للصفحة الرئيسية أو تحميل تطبيق Lingoa مباشرة.</p>
+    <a class="btn btn-gold" href="https://play.google.com/store/apps/details?id=com.lingoa.lingoa">📲 تحميل Lingoa من Google Play</a>
+    <a class="btn btn-ghost" href="/">العودة إلى الصفحة الرئيسية</a>
+  </div>
+</body>
+</html>

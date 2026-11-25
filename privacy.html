@@ -231,28 +231,28 @@
         Lingoa is built on a <strong>privacy-first, offline-capable architecture</strong>. You do not need to register, create an account, or provide personal details to learn vocabulary with Lingoa.
       </p>
 
-      <h3>A. On-Device Learning Data (Stored Locally Only)</h3>
+      <h3>A. On-Device Learning Data, Optional Social Sync & Encrypted Pro Cloud Backup</h3>
       <ul>
-        <li><strong>Data Collected:</strong> Your study progress, mastered words, daily streak counts, quiz scores, spaced repetition (SRS) schedules, and personal bookmarks.</li>
-        <li><strong>Storage:</strong> Stored 100% locally on your device in a secure SQLite database. This data is <strong>never</strong> transmitted to our servers and remains completely in your control.</li>
+        <li><strong>On-Device SQLite Storage:</strong> Your study progress, mastered words, daily streak counts, quiz scores, spaced repetition (SRS) schedules, and personal flashcards are stored locally on your device so core learning works offline.</li>
+        <li><strong>Optional Social & Squad Sync (Cloudflare Edge):</strong> When you use Friends, Challenge Squads, or Live Multiplayer Games, Lingoa syncs your chosen display name, avatar preset, friend code, CEFR level, streak, active unit, and match scores to our authenticated <strong>Cloudflare Workers / D1 / Durable Objects</strong> backend.</li>
+        <li><strong>Optional Pro Encrypted Cloud Backup:</strong> Pro subscribers can store compressed learning backups encrypted at rest with per-user <strong>AES-256-GCM</strong> on our Cloudflare backend. Local JSON exports remain portable JSON files stored on your device.</li>
       </ul>
 
       <h3>B. Audio and Microphone Permission (RECORD_AUDIO)</h3>
       <ul>
         <li><strong>Purpose:</strong> Used strictly for interactive pronunciation practice, speech recognition, and vocabulary speaking exercises.</li>
-        <li><strong>Privacy Protection:</strong> Audio is analyzed in real-time on your device (or via native system speech recognition). <strong>We never record, save, store, or transmit your voice or audio recordings to any external server.</strong></li>
+        <li><strong>Privacy Protection:</strong> Audio is processed in real-time via native device speech recognition. <strong>Lingoa does not record, save, or archive your voice recordings on our servers.</strong></li>
       </ul>
 
-      <h3>C. Local Notifications and Alarms</h3>
+      <h3>C. Local & Push Notifications</h3>
       <ul>
-        <li><strong>Purpose:</strong> Used locally on your device to schedule daily study reminders and spaced repetition reviews.</li>
-        <li><strong>Privacy Protection:</strong> Operates entirely offline on your phone without external network transmission.</li>
+        <li><strong>Purpose:</strong> Local notifications remind you of daily study goals and spaced repetition reviews on-device. Optional push notifications via <strong>Firebase Cloud Messaging (FCM)</strong> deliver real-time friend requests, squad invites, and motivation sparks.</li>
       </ul>
 
-      <h3>D. Diagnostic & Crash Telemetry (Firebase Crashlytics)</h3>
+      <h3>D. Diagnostics, Analytics & Online Media</h3>
       <ul>
-        <li><strong>Data Collected:</strong> Anonymous device state at the time of an unexpected crash, operating system version, device model, and error stack traces.</li>
-        <li><strong>Purpose:</strong> To ensure high performance, resolve technical bugs, and maintain app stability.</li>
+        <li><strong>Firebase Telemetry:</strong> Anonymous crash stack traces (<strong>Crashlytics</strong>), feature analytics (<strong>Firebase Analytics</strong>), performance metrics (<strong>Firebase Performance</strong>), and remote configuration (<strong>Remote Config</strong>).</li>
+        <li><strong>Online Audio & Video Lookup:</strong> Online narration, dictionary lookups, and contextual video clips fetch content over HTTPS from third-party media/speech endpoints when those online features are used.</li>
       </ul>
 
       <h2>3. Advertising & Google AdMob</h2>
@@ -290,8 +290,13 @@
         </thead>
         <tbody>
           <tr>
+            <td><strong>Cloudflare, Inc.</strong></td>
+            <td>Authenticated Social Sync, Real-Time Rooms & Encrypted Pro Backups</td>
+            <td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy</a></td>
+          </tr>
+          <tr>
             <td><strong>Google AdMob</strong></td>
-            <td>Banner, Interstitial, Native & Rewarded Ads</td>
+            <td>Banner, Interstitial, Native & Rewarded Ads (with UMP/GDPR Consent)</td>
             <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></td>
           </tr>
           <tr>
@@ -300,8 +305,8 @@
             <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy</a></td>
           </tr>
           <tr>
-            <td><strong>Firebase Crashlytics</strong></td>
-            <td>Crash Analytics & Performance</td>
+            <td><strong>Firebase (Google LLC)</strong></td>
+            <td>Crashlytics, Analytics, Performance, Remote Config & Cloud Messaging</td>
             <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
           </tr>
         </tbody>
@@ -314,8 +319,13 @@
 
       <h2>7. Data Retention & Deletion Rights</h2>
       <p>
-        You have the right to request access to or deletion of any data associated with your device. You can clear all local app data instantly through: <em>Settings ➔ Apps ➔ Lingoa ➔ Storage ➔ Clear Data</em>. For any telemetry inquiries, email us at <a href="mailto:mohammedaymanhagras@gmail.com">mohammedaymanhagras@gmail.com</a>.
+        You have full control over both local and cloud data:
       </p>
+      <ul>
+        <li><strong>In-App Cloud Account & Data Deletion:</strong> Permanently erase your cloud profile, directory listing, inbox items, and encrypted cloud backup directly in <em>Settings ➔ Backup & Data ➔ Delete Cloud Account & Data</em>.</li>
+        <li><strong>In-App Local Reset:</strong> Clear all local learning progress via <em>Settings ➔ Backup & Data ➔ Reset Local Progress</em> or via Android <em>Settings ➔ Apps ➔ Lingoa ➔ Storage ➔ Clear Data</em>.</li>
+        <li><strong>Email Deletion Request:</strong> Email <a href="mailto:mohammedaymanhagras@gmail.com">mohammedaymanhagras@gmail.com</a> with your App User ID for manual deletion assistance.</li>
+      </ul>
 
       <h2>8. User Rights under GDPR & CCPA</h2>
       <p>

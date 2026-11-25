@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lingoa.lingoa",
+      "sha256_cert_fingerprints": [
+        "EC:07:3F:D4:09:65:DB:E6:56:19:03:FA:1B:65:B5:50:A8:95:06:12:8C:A3:37:C8:3C:BE:8C:8D:95:FF:BA:2B",
+        "3F:6B:DB:1F:3A:03:03:82:52:A9:CA:A2:14:C9:B2:5F:09:5C:29:13:02:0D:F5:56:73:6B:51:9A:D9:39:F6:94"
+      ]
+    }
+  }
+]

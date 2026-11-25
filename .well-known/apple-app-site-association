@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["com.lingoa.lingoa"],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "One-tap Lingoa Challenge Squad deep link"
+          },
+          {
+            "/": "/join",
+            "comment": "Query-based Lingoa Challenge Squad deep link"
+          }
+        ]
+      }
+    ]
+  }
+}
